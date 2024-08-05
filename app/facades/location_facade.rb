@@ -1,7 +1,6 @@
 class LocationFacade
   def self.latLong(location_params)
-    require 'pry' ; binding.pry
-    params = location_params 
+    params = { location: location_params }
     result = LocationService.call_api('/geocoding/v1/address', params)
     latLong_formatted(result)
   end

@@ -1,8 +1,7 @@
 class LocationService
   def self.call_api(endpoint, params = { })
-  response = conn.get(endpoint, params) do |request| 
-    #pry line 7.5: response => nil, request => #<struct Faraday::Request http_method=nil, path=nil, params=nil, headers=nil, body=nil, options=nil>, params => {:location=>"Longmont, Co"}+
 
+  response = conn.get(endpoint, params) do |request| 
     request.params = params # pry line 7.5: request.params => {"location"=>"Longmont, Co", "key"=>"tqvNqsrsiwwh07C0W4KqzfAn3hlXSpV7"}
     request.params[:key] = Rails.application.credentials[:mapquest][:key]
   end

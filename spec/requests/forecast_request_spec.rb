@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "forecast" do
   it "returns forecast from searched location" do
     params = { location: "Denver, Co"}
-    get "/api/v1/forecast"
+    get "/api/v1/forecast", params: params
     expect(response).to be_successful
     expect(response.status).to eq(200)
 
