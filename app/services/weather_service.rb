@@ -1,9 +1,11 @@
 class WeatherService
   def self.call_api(endpoint, params = {})
+   #params ->{:lat_long=>{:q=>"40.16394,-105.10015"}}
     response = conn.get(endpoint, params) do |request|
       request.params = params
       request.params[:key] = Rails.application.credentials.weather[:key]
     end
+    #nil atm
     parse_data(response)
   end
   

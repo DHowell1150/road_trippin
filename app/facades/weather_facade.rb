@@ -1,24 +1,6 @@
 class WeatherFacade 
-  def self.full_forecast(lat_long)
-    params = lat_long
+  def self.full_forecast(lat_long) #{:q=>"40.16394,-105.10015"}
+    params = { lat_long: lat_long } #{:lat_long=>{:q=>"40.16394,-105.10015"}}
     full_forecast = WeatherService.call_api('/v1/forecast.json', params)
   end
 end
-
-
-# def self.forecast
-
-# end
-# def self.current
-#   current = {}
-#   forecast[:current]
-
-# end
-
-# def self.daily
-
-# end
-
-# def self.hourly
-
-# end

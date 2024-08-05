@@ -1,6 +1,6 @@
 class LocationService
   def self.call_api(endpoint, params = { })
-
+  # params -> {:location=>{:location=>"Longmont, Co"}}
   response = conn.get(endpoint, params) do |request| 
     request.params = params # pry line 7.5: request.params => {"location"=>"Longmont, Co", "key"=>"tqvNqsrsiwwh07C0W4KqzfAn3hlXSpV7"}
     request.params[:key] = Rails.application.credentials[:mapquest][:key]

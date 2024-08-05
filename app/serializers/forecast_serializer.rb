@@ -1,5 +1,5 @@
 class ForecastSerializer
-  Include JSONAPI::Serializer
+  include JSONAPI::Serializer
 
   attributes :current, :daily, :hourly
 end
