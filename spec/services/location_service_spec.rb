@@ -5,7 +5,8 @@ RSpec.describe LocationService do
     params = {  location: "thornton,co"}
     query = LocationService.call_api('/geocoding/v1/address', params)[:results]
     #returns expected collection
-    latLong = query.dig(0, :locations, 0, :latLng)
+    require 'pry' ; binding.pry
+    latLong = query.dig(0, :locations, 0, :latLng) #{:lat=>39.8705, :lng=>-104.98552}
 
     expect(query).to be_an Array
     expect(latLong).to be_a Hash
