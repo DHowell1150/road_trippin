@@ -2,10 +2,9 @@ require 'rails_helper'
 
 RSpec.describe LocationService do
   it 'can return lat and long', :vcr do
-    params = {  location: "thornton,co"}
+    params = { location: "thornton,co" }
     query = LocationService.call_api('/geocoding/v1/address', params)[:results]
     #returns expected collection
-    require 'pry' ; binding.pry
     latLong = query.dig(0, :locations, 0, :latLng) #{:lat=>39.8705, :lng=>-104.98552}
 
     expect(query).to be_an Array

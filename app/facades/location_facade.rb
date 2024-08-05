@@ -1,6 +1,7 @@
 class LocationFacade
   def self.latLong(location_params)
-    params = location_params # {:location=>"Longmont, Co"}
+    require 'pry' ; binding.pry
+    params = location_params 
     result = LocationService.call_api('/geocoding/v1/address', params)
     latLong_formatted(result)
   end
