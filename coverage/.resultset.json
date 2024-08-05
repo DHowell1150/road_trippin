@@ -203,30 +203,18 @@
           null
         ]
       },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/app/facades/location_facade.rb": {
+      "/Users/danahowell/turing/3mod/projects/road_trippin/app/poros/forecast.rb": {
         "lines": [
           1,
           1,
-          1,
-          null,
-          1,
-          1,
-          null,
           null,
           1,
           0,
-          null,
-          null,
-          1,
+          0,
           0,
           null,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/spec/facades/weather_facade_spec.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -245,156 +233,28 @@
           null,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/spec/requests/api/v1/road_trippin_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
           null,
           null,
           null,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/spec/services/location_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/app/services/location_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          2,
           null,
           null,
-          1,
-          2,
           null,
           null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/spec/services/weather_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
           null,
           null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/danahowell/turing/3mod/projects/road_trippin/app/services/weather_service.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          2,
           null,
           null,
-          1,
-          2,
           null,
           null,
-          1,
-          2,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1722734400
+    "timestamp": 1722820958
   }
 }

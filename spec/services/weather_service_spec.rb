@@ -30,7 +30,7 @@ RSpec.describe WeatherService do
   it "can return forecast for location" do
     params = { q: "39.8705,-104.98552" }
     query = WeatherService.call_api('/v1/forecast.json', params)
-    
+
     forecast = query.dig(:forecast, :forecastday, 0)
     expect(forecast).to be_a Hash
 

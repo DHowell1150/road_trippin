@@ -36,6 +36,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 gem "faraday"
 gem "simplecov"
+gem "jsonapi-serializer"
 
 
 group :development, :test do
@@ -46,7 +47,6 @@ group :development, :test do
   gem "launchy"
   gem "orderly"
   gem "pry"
-  gem "jsonapi-serializer"
   # gem "shoulda-matchers"
   # gem "jsonapi-serializer"
   # gem "factorybot"
