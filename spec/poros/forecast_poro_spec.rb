@@ -39,7 +39,8 @@ RSpec.describe Forecast do
 				}
 			}
 		}
-		full_forecast = Forecast.new(forecast_data[:data][:attributes])
+		
+		full_forecast = Forecast.new(forecast_data[:data])
 		expect(full_forecast).to be_a(Forecast)
 		expect(full_forecast.current).to be_a(Hash)
 		expect(full_forecast.daily).to be_a(Array)

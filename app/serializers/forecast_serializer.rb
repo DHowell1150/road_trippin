@@ -1,14 +1,29 @@
 class ForecastSerializer
   include JSONAPI::Serializer
-
+	set_id :id
   attributes :current, :daily, :hourly
 end
 
 
+# set_id :uuid
+
+# # Always return a string from this method to conform with the JSON:API spec.
+# def id
+# object.slug.to_s
+# end
+
+# def id
+# 	nil
+# end
+
+# def id
+# 	object.id ||= SecureRandom.uuid
+# end
 
 
-
-
+# def id
+# 	object.try(:id) || "null"
+# end
 
 
 
